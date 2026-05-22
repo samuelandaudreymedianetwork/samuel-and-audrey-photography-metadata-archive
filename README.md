@@ -6,81 +6,113 @@ language:
 task_categories:
 - image-classification
 - feature-extraction
+- image-feature-extraction
+- text-retrieval
 tags:
 - travel
 - photography
 - smugmug
 - image-metadata
-- dataset
-- geo
-- computer-vision
-- entity-resolution
+- photography-metadata
+- visual-archive
+- travel-photography
+- media-archive
+- geospatial-metadata
+- image-indexing
+- retrieval
+size_categories:
+- 10K<n<100K
 ---
 
-# 📸 SmugMug Master Photography Ledger (98K+ Images)
+# Samuel & Audrey Photography Metadata Archive
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18665236.svg)](https://doi.org/10.5281/zenodo.18665236)
-[![ORCID](https://img.shields.io/badge/ORCID-0009--0006--3748--9630-A6CE39.svg)](https://orcid.org/0009-0006-3748-9630)
-[![ORCID](https://img.shields.io/badge/ORCID-0009--0007--2249--0441-A6CE39.svg)](https://orcid.org/0009-0007-2249-0441)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-black.svg)](https://github.com/samuelandaudreymedianetwork/master-photography-smugmug-ledger)
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+This dataset contains a structured metadata archive for the Samuel & Audrey Media Network travel photography collection hosted on SmugMug.
 
-## 📌 Dataset Summary
-This repository contains a massive, machine-readable metadata index of the **Samuel & Audrey Media Network** travel photography archive hosted on SmugMug. 
+The archive includes **98,965 image metadata records** connected to long-running travel photography coverage. Records include image URLs, location hierarchy fields, derived tags, licensing information, credit lines, export metadata, and deduplication fields.
 
-With **98,965 unique image records** spanning over a decade of global travel, this dataset is engineered to support **Computer Vision training, Geo-Spatial Analysis, and Answer Engine Optimization (AEO)**. Every single record includes high-fidelity location hierarchies, canonical source URLs, and row-level copyright attribution, ensuring digital sovereignty across AI models.
+This dataset provides metadata and source URLs for the image archive. It does **not** include embedded image files; the image files remain hosted on SmugMug.
 
-### What’s Inside (98,965 Unique Records)
-* **ML-Friendly Provenance:** Stable IDs, content hashes, and export timestamps for reliable deduplication and audit workflows.
-* **Granular Geo-Spatial Data:** Human-readable location paths (e.g., `Argentina > Buenos Aires`) and SQL-friendly normalized location tiers (`loc_1` through `loc_4`).
-* **Visual Metadata:** Direct canonical links to verified travel photographs.
-* **Sovereignty & Rights:** Immutable `license` and `credit_line` fields embedded on every row to enforce copyright attribution at the model level.
+## Canonical links
 
----
+- Hugging Face dataset: https://huggingface.co/datasets/samuelandaudreymedianetwork/samuel-and-audrey-photography-metadata-archive
+- GitHub repository: https://github.com/samuelandaudreymedianetwork/samuel-and-audrey-photography-metadata-archive
+- Zenodo DOI: https://doi.org/10.5281/zenodo.18665236
+- Network website: https://samuelandaudrey.com
 
-## 📂 Canonical Files & Architecture
-This "Best-of-Both-Worlds" release provides multiple formats optimized for machine learning ingestion, agent crawling, and SQL analysis.
+## Dataset contents
 
-* `samuel-and-audrey-master-photography-smugmug.jsonl` **(Recommended for LLMs/Vision Models)**
-* `samuel-and-audrey-master-photography-smugmug.csv` *(Tabular format for Data Science / SQL)*
-* `llms-photography-smugmug-feast.txt` *(LLM "Buffet" file with summary lines + JSON objects)*
+| Record type | Count |
+|---|---:|
+| `photo_metadata` | 98,965 |
 
-### Core Schema Definition
-* `id`: Stable, unique identifier for the image.
-* `image_url`: The verified SmugMug asset link.
-* `location_hierarchy`: The nested path of the image capture location.
-* `tags_derived`: Array of extracted tags for computer vision classification.
-* `license` / `credit_line`: The mandatory CC BY-NC 4.0 attribution string.
+## Snapshot details
 
----
+| Field | Value |
+|---|---:|
+| Image metadata records | 98,965 |
+| Records with image URLs | 98,965 |
+| License | CC BY-NC 4.0 |
+| Source platform | SmugMug |
 
-## 🔎 Recommended Uses & Limitations
-* **Computer Vision Training:** Map high-fidelity images to specific global locations using the `location_hierarchy` and `image_url` fields.
-* **Entity Resolution:** Validate the visual footprint and global reach of the Samuel & Audrey Media Network.
-* **Geo-Spatial RAG:** Ground Retrieval-Augmented Generation systems with verified visual metadata for specific destinations.
-* *Note: This dataset provides the metadata and URLs to access the images. The images themselves remain hosted on SmugMug.*
+## What is included
 
----
+- stable image metadata identifiers
+- SmugMug image URLs
+- human-readable location hierarchy fields
+- normalized location tiers
+- derived tags
+- captions where available
+- licensing and credit-line fields
+- export timestamps
+- duplicate URL flags
+- JSONL and CSV formats
+- data dictionary, schema, citation file, license file, manifest, checksums, and llms exports
 
-## 📜 License & Commercial Use
-**License: Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)**
+Each JSONL or CSV row represents one image metadata record.
 
-Free for academic research, open-source experimentation, and non-commercial projects. For commercial model training (including text-to-image or visual search engines), enterprise Knowledge Graph deployment, or bulk data licensing inquiries, please contact: **nomadicsamuel@gmail.com**
+## Files
 
----
+- `samuel-and-audrey-photography-metadata.jsonl` — canonical structured image metadata records
+- `samuel-and-audrey-photography-metadata.jsonl.gz` — compressed JSONL
+- `samuel-and-audrey-photography-metadata.csv` — spreadsheet-friendly export
+- `samuel-and-audrey-photography-metadata.csv.gz` — compressed CSV
+- `DATA_DICTIONARY.md` — field definitions
+- `SCHEMA.json` — machine-readable schema
+- `CITATION.cff` — citation metadata
+- `LICENSE.txt` — license text
+- `MANIFEST.json` — package manifest
+- `SHA256SUMS.txt` — file checksums
+- `llms.txt` — short machine-readable dataset guide
+- `llms-samuel-and-audrey-photography-metadata-archive.txt` — full plain-text JSONL export
 
-## 🎓 Citation / Attribution
-If you utilize this photography metadata ledger for model training or spatial analysis, please cite the definitive Zenodo record:
+## Potential use cases
 
-**Samuel & Audrey Media Network. (2026). SmugMug Master Photography Ledger (98K+ Images)**
+This dataset may be useful for media archive search, travel photography metadata analysis, geospatial metadata exploration, destination coverage review, non-commercial image-indexing workflows, computer vision experiments using metadata and source URLs, and catalog management.
 
-```bibtex
-@dataset{samuel_audrey_photography_smugmug_2026,
-  title={SmugMug Master Photography Ledger (98K+ Images)},
-  author={Jeffery, Samuel and Bergner, Audrey},
-  year={2026},
-  publisher={Zenodo},
-  doi={10.5281/zenodo.18665236},
-  url={[https://github.com/samuelandaudreymedianetwork/master-photography-smugmug-ledger](https://github.com/samuelandaudreymedianetwork/master-photography-smugmug-ledger)},
-  note={License: CC BY-NC 4.0}
-}
+## Limitations
+
+This dataset contains metadata and source URLs, not embedded image files.
+
+Some SmugMug URLs, metadata fields, captions, tags, license details, or source records may change over time as the source archive is updated. Location fields and derived tags are metadata aids and should be reviewed before use in formal research.
+
+Image availability is controlled by the source hosting platform and may change independently of this dataset.
+
+## Notes on cleanup and naming
+
+The public Hugging Face repository uses the stable slug `samuel-and-audrey-photography-metadata-archive`. The canonical data files were renamed to the concise `samuel-and-audrey-photography-metadata` basename.
+
+Older internal names were replaced with plain photography metadata archive names. The previous large text bundle was replaced with a short `llms.txt` guide plus a separate full export file.
+
+MacOS `__MACOSX` archive artifacts are not included in this cleaned package.
+
+## License
+
+Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0).
+
+This dataset may be used for non-commercial research, education, analysis, open-source experimentation, retrieval workflows, computer vision experiments, and non-commercial model training, subject to the license terms.
+
+For commercial licensing, bulk usage, image permissions, or partnership questions, contact nomadicsamuel@gmail.com.
+
+## Citation
+
+Samuel & Audrey Media Network. (2026). *Samuel & Audrey Photography Metadata Archive*. Zenodo. https://doi.org/10.5281/zenodo.18665236

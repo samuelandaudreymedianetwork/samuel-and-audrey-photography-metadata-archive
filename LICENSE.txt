@@ -1,14 +1,15 @@
-Creative Commons Attribution–NonCommercial 4.0 International (CC BY-NC 4.0)
+Creative Commons Attribution-NonCommercial 4.0 International Public License (CC BY-NC 4.0)
 
-This dataset is licensed under the Creative Commons Attribution–NonCommercial 4.0 International License.
+Copyright (c) 2026 Samuel & Audrey Media Network
 
-You are free to:
-- Share — copy and redistribute the material in any medium or format
-- Adapt — remix, transform, and build upon the material
+This dataset and its metadata contents are made available under the Creative Commons Attribution-NonCommercial 4.0 International License.
 
-Under the following terms:
-- Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made.
-- NonCommercial — You may not use the material for commercial purposes.
+You are free to share and adapt the material for non-commercial purposes with appropriate attribution.
 
-License text:
-https://creativecommons.org/licenses/by-nc/4.0/
+This dataset contains metadata and source URLs. It does not transfer ownership of hosted image files or grant additional commercial image-use rights beyond the stated license.
+
+For commercial licensing inquiries, bulk usage, image permissions, or exceptions, please contact:
+nomadicsamuel@gmail.com
+
+Full legal code:
+https://creativecommons.org/licenses/by-nc/4.0/legalcode

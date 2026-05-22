@@ -1,0 +1,28 @@
+# Samuel & Audrey Photography Metadata Archive
+
+This dataset contains 98,965 travel photography metadata records connected to the Samuel & Audrey Media Network image archive.
+
+Canonical dataset:
+https://huggingface.co/datasets/samuelandaudreymedianetwork/samuel-and-audrey-photography-metadata-archive
+
+Zenodo DOI:
+https://doi.org/10.5281/zenodo.18665236
+
+Recommended files:
+- samuel-and-audrey-photography-metadata.jsonl
+- samuel-and-audrey-photography-metadata.csv
+- DATA_DICTIONARY.md
+- SCHEMA.json
+- CITATION.cff
+
+Records:
+- 98,965 photo_metadata records
+
+Note:
+This dataset contains metadata and source URLs, not embedded image files.
+
+License:
+CC BY-NC 4.0
+
+Contact:
+nomadicsamuel@gmail.com

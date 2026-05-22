@@ -1,0 +1,119 @@
+{
+  "dataset": "samuel-and-audrey-photography-metadata-archive",
+  "title": "Samuel & Audrey Photography Metadata Archive",
+  "generated_utc": "2026-05-21T23:32:46.980034+00:00",
+  "records_total": 98965,
+  "record_counts_by_type": {
+    "photo_metadata": 98965
+  },
+  "canonical_dataset_url": "https://huggingface.co/datasets/samuelandaudreymedianetwork/samuel-and-audrey-photography-metadata-archive",
+  "doi": "10.5281/zenodo.18665236",
+  "license": "CC-BY-NC-4.0",
+  "snapshot": {
+    "image_metadata_records": 98965,
+    "records_with_image_urls": 98965,
+    "records_with_captions": 98965,
+    "records_with_tags": 98965,
+    "records_with_location_fields": 98965,
+    "duplicate_image_url_flags": 0,
+    "domain_counts": {
+      "photos.smugmug.com": 98965
+    },
+    "license_counts": {
+      "CC-BY-NC-4.0": 98965
+    },
+    "language_counts": {
+      "en": 98965
+    },
+    "top_primary_locations": {
+      "People Photos": 13715,
+      "Argentina 2019": 6556,
+      "Country Series": 6296,
+      "Canada 2018/2019/2020": 5565,
+      "Japan 2018/2023": 4811,
+      "Korea 2011": 2989,
+      "Oldies": 2901,
+      "China": 2234,
+      "Cambodia": 1994,
+      "India": 1978,
+      "Malaysia": 1589,
+      "Italy 2017": 1527,
+      "Thailand": 1465,
+      "Guest Photo Essays": 1450,
+      "Smiling Faces Travel Photos": 1396,
+      "Viet Nam": 1268,
+      "UK 2017": 1251,
+      "Canada 2014": 1222,
+      "Bolivia": 1220,
+      "Peru (2016)": 1171,
+      "USA 2014": 1146,
+      "Argentina": 1119,
+      "Croatia 2017": 1058,
+      "Peru": 1030,
+      "Other": 989
+    }
+  },
+  "cleanup_note": "Replaced older internal naming patterns with plain photography metadata archive names; replaced large text bundle with short llms guide plus separate full export; added data dictionary, schema, manifest, and clean citation metadata.",
+  "files": {
+    ".gitattributes": {
+      "bytes": 127,
+      "sha256": "f884ab5acc3c44d244496ca3be708ee0bb81d627d6b78ba33331abd90b1d7f68"
+    },
+    "CITATION.cff": {
+      "bytes": 923,
+      "sha256": "b8ff7db2c64861d1e3e209efc67a011e393af733b4fd3443212b9307fdee2396"
+    },
+    "DATA_DICTIONARY.md": {
+      "bytes": 3387,
+      "sha256": "e76298a4a2aeea0f9397b66a7aa9062f5d4d12ad4d790fd9f52305b882ade11a"
+    },
+    "LICENSE.txt": {
+      "bytes": 759,
+      "sha256": "ff7f6254287f7293db79315749f8e50df4661ce216938f3c286068c217d5f68f"
+    },
+    "MANIFEST.json": {
+      "bytes": 4107,
+      "sha256": "7f36c6014b44a038bf7681ec25e6c8067ec75cb30d3251fa1926b583d5ed125c"
+    },
+    "README.md": {
+      "bytes": 4615,
+      "sha256": "f49edb62df890797597ebc3af6daec43fb28dd89827cfdbced38e880c6cb25e1"
+    },
+    "SCHEMA.json": {
+      "bytes": 7076,
+      "sha256": "5ecc3a3ac6b240ebcf8a1d2e87e39a095962730cb36e29af3ef2e26b692ae058"
+    },
+    "llms-samuel-and-audrey-photography-metadata-archive.txt": {
+      "bytes": 154159939,
+      "sha256": "2a0038a45876ba7222c440bef71085a4fbc3f6413a47abdb1e6e69245c831efb"
+    },
+    "llms-samuel-and-audrey-photography-metadata-archive.txt.gz": {
+      "bytes": 7461486,
+      "sha256": "3a426e6d71338b237fba21d4b02cf4efb4e4ad3fe9633f5c4d33067713dbcadd"
+    },
+    "llms.txt": {
+      "bytes": 697,
+      "sha256": "6180ce6061c84ec0c142046423c045d2b65b7dc967da2988401aaeb728fd67d6"
+    },
+    "llms.txt.gz": {
+      "bytes": 406,
+      "sha256": "e787d342452198bd61b1b03c18ad8782ac744f9b224c83688b0dbffd041fe7df"
+    },
+    "samuel-and-audrey-photography-metadata.csv": {
+      "bytes": 98105552,
+      "sha256": "aeb54e290efb60892aa3877b3459551e36fadc5a16214a88841384901ed5f803"
+    },
+    "samuel-and-audrey-photography-metadata.csv.gz": {
+      "bytes": 7000703,
+      "sha256": "68e202fd427da642569e25f59fc5fe5e9306806da62e834ab7395cefdf794571"
+    },
+    "samuel-and-audrey-photography-metadata.jsonl": {
+      "bytes": 154159523,
+      "sha256": "b8503f653988723d0e2064e2df073c66ac2b64954eb76754b512949d41124a82"
+    },
+    "samuel-and-audrey-photography-metadata.jsonl.gz": {
+      "bytes": 7461253,
+      "sha256": "90f801291f40ae08cc6e389ef0e5903004b92e6ae04ca95bc0b07c7599684720"
+    }
+  }
+}

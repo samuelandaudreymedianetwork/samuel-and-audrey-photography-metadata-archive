@@ -1,7 +1,25 @@
 cff-version: 1.2.0
 message: "If you use this dataset, please cite it as below."
-title: "Samuel & Audrey Media Network — SmugMug Travel Photo Metadata Index (MASTER)"
+type: dataset
+title: "Samuel & Audrey Photography Metadata Archive"
 authors:
-  - name: "Samuel & Audrey Media Network"
-date-released: "2026-02-12"
+  - family-names: "Jeffery"
+    given-names: "Samuel"
+    affiliation: "Samuel & Audrey Media Network"
+    orcid: "https://orcid.org/0009-0006-3748-9630"
+    email: "nomadicsamuel@gmail.com"
+  - family-names: "Bergner"
+    given-names: "Audrey"
+    affiliation: "Samuel & Audrey Media Network"
+    orcid: "https://orcid.org/0009-0007-2249-0441"
+repository-code: "https://huggingface.co/datasets/samuelandaudreymedianetwork/samuel-and-audrey-photography-metadata-archive"
+url: "https://huggingface.co/datasets/samuelandaudreymedianetwork/samuel-and-audrey-photography-metadata-archive"
+doi: "10.5281/zenodo.18665236"
 license: "CC-BY-NC-4.0"
+keywords:
+  - photography metadata
+  - travel photography
+  - SmugMug
+  - image metadata
+  - visual archive
+  - media archive
